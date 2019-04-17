@@ -32,16 +32,3 @@ print(0/2)
 
 # 2-node rf2:
 # 100 * 1 + 0 = 100
-
-
-
-
-
-# # Option 2: take config file 'specs.ini' (in this directory) with node count, metrics per second, RF, and storage needs
-
-# import configparser
-
-# parser = configparser.ConfigParser()
-# parser.read(open('params.ini'))
-
-# print(parser.get('specs', 'rf'))
