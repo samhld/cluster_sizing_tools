@@ -9,19 +9,18 @@ parser.add_argument("rf", help="Replication factor", type=int)
 
 args = parser.parse_args()
 
-# mps = int(sys.argv[1])
-# nodes = int(sys.argv[2])
-# rf = int(sys.argv[3])
-
-print(args.nodes)
+mps = args.mps
+nodes = args.nodes
+rf = args.rf
 
 def totalInternalWrites(mps,nodes,rf):
-    print((args.mps * (rf / nodes)) + (mps * ((nodes - rf ) / nodes)))
+    print(mps * (1 / (nodes / rf)) + (mps * (nodes-rf/rf)))
 
-totalInternalWrites(args.mps,args.nodes,args.rf)
+totalInternalWrites(mps,nodes,rf)
 
 # # Math
-
+print(1/(nodes/rf))
+print(0/2)
 # # per node writes when first write hits    +    per node writes when first write misses (chance of miss is rf/nodes)
 
 # mps * (1 / (nodes / rf)) + (mps * (nodes-rf/rf))
