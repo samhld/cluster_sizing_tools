@@ -16,4 +16,5 @@ rf = args.rf
 def totalInternalWrites(mps,nodes,rf):
     print(mps * (1 / (nodes / rf)) + (mps * (nodes-rf)/rf))
 
-totalInternalWrites(mps,nodes,rf)
+if __name__ == "__main__":
+    totalInternalWrites(mps,nodes,rf)
