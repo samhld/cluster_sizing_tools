@@ -1,4 +1,4 @@
-# cluster_traffic_calculator
+# Cluster sizing tools
 For calculating the total write write traffic in an InfluxEnterprise cluster of any size and replication factor
 
 ## Usage
